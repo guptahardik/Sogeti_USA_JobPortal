@@ -13,6 +13,7 @@ namespace SogetiUSA_JobPortal
 {
     public class Startup
     {
+        // Daniel commmit comments
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
