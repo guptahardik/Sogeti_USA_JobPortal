@@ -1,11 +1,31 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test Page</title>
+</head>
+<body>
 
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <h1>VERSION 0.0 Just to get things started.</h1>
-        <p>Due Date: Before Sprint Ret 2</p>
-        <p>The time on the server is @DateTime.Now</p>
+    <script type="text/javascript">
+        function add2Nos() {
+            document.sum.z.value = parseInt(document.sum.x.value) + parseInt(document.sum.y.value)
+        }
+    </script>
 
-    </div>
+    <h1>HTML5 Example</h1>
+    <textarea id="TextArea1" rows="2" cols="40">
+        Demostration of MVC buttons
+    </textarea>
+       
+    <form name ="sum">
+        <input type="text" name="x" size="5" maxlength="5" />
+        +
+        <input type="text" name="y" size="5" maxlength="5" />
+        <input type="button" value=" = " name="Submit" onclick="add2Nos()" />
+        <input type="text" name="z" size="5" maxlength="5" />
+        <span id="result"></span>
+    </form>
+
+</body>
+
+</html>

@@ -33,5 +33,12 @@ namespace SogetiUSA_JobPortal.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public ActionResult YourActionName()
+        {
+            //some operations goes here
+
+            return View(); //return some view to the user
+        }
     }
 }
